@@ -2,7 +2,7 @@ from datetime import date
 import holidays 
 
 # Select country 
-uk_holidays = holidays.UnitedKingdom() 
+jp_holidays = holidays.Japan() 
 
 # Print all the holidays in UnitedKingdom in year 2018 
 for ptr in holidays.Japan(years = 2023).items(): 
