@@ -1,7 +1,5 @@
 import pandas as pd
-from datetime import date 
-import holidays 
-
+import numpy as np
 
 # Load the Excel file into a pandas DataFrame
 file_path = r'Book1.xlsx'
@@ -12,18 +10,9 @@ df['Date'] = pd.to_datetime(df['Date'])
 
 # Identify weekends (Saturday and Sunday)
 weekend_mask = (df['Date'].dt.dayofweek == 5) | (df['Date'].dt.dayofweek == 6)
+
+# Filter out weekends
 df = df[~weekend_mask]
 
-# Select country 
-jp_holidays = holidays.Japan() 
-
-####################### For holidays other than weekends ####################
-for ptr in holidays.Japan(years = 2023).items(): 
-	print(ptr) 
-
-    # df=df[~ptr]
-
-
-
-# Save the modified DataFrame back to the specified Excel file
+# Save the modified DataFrame back to the Excel file
 df.to_excel('output_file.xlsx', index=False)
