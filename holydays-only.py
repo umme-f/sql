@@ -13,7 +13,7 @@ japanese_holidays_2023 = ['2023-01-01', '2023-01-02', '2023-01-09', '2023-02-11'
 
 # Removing data
 df = df[~df[column_name].isin(japanese_holidays_2023)]
-
+df['Server type']=['AP']
 # Save the modified DataFrame back to the Excel file
 df.to_excel('output_file_without_japanese_holidays_2023.xlsx', index=False)
 
