@@ -1,4 +1,5 @@
-# import pandas as pd
+# ================ To remove a range of columns from a CSV file using Python ==============
+import pandas as pd
 
 # Create a sample DataFrame
 data = {'Timestamp': ['2024-02-20 12:30:45', '2024-02-20 14:15:30', '2024-02-20 16:45:00'],

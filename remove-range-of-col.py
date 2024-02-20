@@ -1,4 +1,5 @@
-#To remove a range of columns from a CSV file using Python 
+#=========== To remove a range of columns from a CSV file using Python ============ 
+
 import pandas as pd
 
 # Read the CSV file
