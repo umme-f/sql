@@ -69,5 +69,21 @@ This script creates a new table named CombinedServerData and inserts the relevan
 Make sure to adjust the column and table names as needed based on your actual database structure and CSV file contents.
 
 
+--------------------------------------------------------------------------
+SELECT DATE(timestamp_column) AS date_only
+FROM your_table
+WHERE timestamp_column >= '2024-02-01' AND timestamp_column < '2024-03-01';
+
+
+...............Replace timestamp_column with the actual name of your timestamp column, and your_table with the name of your table.
+
+In this example, the DATE(timestamp_column) function extracts the date part from the timestamp. The WHERE clause filters the data for the month of February 2024. Adjust the date range in the WHERE clause based on your requirements.
+
+
+
+
+
+
+
 
 
