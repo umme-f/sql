@@ -78,6 +78,15 @@ WHERE timestamp_column >= '2024-02-01' AND timestamp_column < '2024-03-01';
 ...............Replace timestamp_column with the actual name of your timestamp column, and your_table with the name of your table.
 
 In this example, the DATE(timestamp_column) function extracts the date part from the timestamp. The WHERE clause filters the data for the month of February 2024. Adjust the date range in the WHERE clause based on your requirements.
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+SELECT
+  CONCAT(MIN(your_column) * 100, '% - ', MAX(your_column) * 100, '%') AS percentage_range,
+  COUNT(*) AS count_of_records
+FROM
+  your_table
+GROUP BY
+  NTILE(10); -- Divide the data into 10 percentiles, you can adjust this value as needed
 
 
 
