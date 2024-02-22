@@ -88,7 +88,10 @@ FROM
 GROUP BY
   NTILE(10); -- Divide the data into 10 percentiles, you can adjust this value as needed
 
-
+-------------------------------remove last col od df ---------------------
+df.drop(columns=df.columns[-1],  axis=1,  inplace=True)
+or
+df.pop(df.columns[-1])
 
 
 
