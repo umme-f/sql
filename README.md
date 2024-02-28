@@ -3,6 +3,12 @@ CAST(DateTime AS TIME) < '08:30:00' DELETE FROM mem
 WHERE CAST(DateTime AS TIME) < '08:30:00' and CAST(DateTime AS TIME) > '17:15:00';
 0 rows affected
 
+-------------------------------------
+
+DELETE FROM mem
+WHERE DateTime NOT BETWEEN '2023-02-28 08:30:00' AND '2023-02-28 17:15:00';
+
+
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
 
