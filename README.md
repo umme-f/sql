@@ -1,3 +1,13 @@
+28/02/2023
+CAST(DateTime AS TIME) < '08:30:00' 
+
+
+
+
+
+
+
+
 i have 3 csv files. one is application server cpu data, one is database server cpu data and the last one is file server cpu data. each csv file contains 3 columns-date-time column,cpu using rate and server name. how do i show each day of  aprils avg and max cpu using rate in a table using sql management server. also show the dates from date time column in the first column in the combied table
 ChatGPT
 Certainly! If you want to display each day of April's average and maximum CPU usage for each server type in a combined table, you can modify the script as follows:
