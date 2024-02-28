@@ -1,8 +1,9 @@
 28/02/2023
-CAST(DateTime AS TIME) < '08:30:00' 
+CAST(DateTime AS TIME) < '08:30:00' DELETE FROM mem
+WHERE CAST(DateTime AS TIME) < '08:30:00' and CAST(DateTime AS TIME) > '17:15:00';
+0 rows affected
 
-
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
 
 
